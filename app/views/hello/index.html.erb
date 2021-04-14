@@ -2,8 +2,7 @@
   <h1 class="display-4"><%= @title %></h1>
   <p ><%= @msg %></p>
   <%= form_tag(controller: "hello", action: "index") do %>
-    <%= check_box_tag("check1") %>
-    <%= label_tag("check1", "check box") %>
-    <%= submit_tag("Click") %>
+    <%= select_tag('s1', options_for_select(["Windows", "macOS","Linux"]),{size:5 ,multiple:true, class:"form-control"}) %>
+    <%= submit_tag("click") %>
   <% end %>
 </body>
