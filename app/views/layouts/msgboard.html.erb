@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= @title %></title>
+    <%= csrf_mata_tags %>
+    <%= csp_meta_tag %>
+  </head>
+  <body class="container text-body">
+    <h1 class="mb-4 display-4 text-primary">MsgBoard</h1>
+    <%= yield %>
+    <div class="mt-4 text-center small text-dark border-top border-dark">
+      copyright teal 2021
+    </div>
+  </body>
+</html>
